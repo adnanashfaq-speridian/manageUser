@@ -1,0 +1,727 @@
+<template>
+    <lightning-tabset>
+        
+        <lightning-tab label="Election Details" onactive={handleTabChange}>
+            <template if:true={isTab1Active}>
+                <!-- Content for Tab 1 -->
+               
+                <lightning-radio-group
+                    label="Radio Group"
+                    options={options}
+                    value={value}
+                    class="slds-m-around_x-small"
+                    required
+                >
+                </lightning-radio-group>
+
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-1">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">First field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-1">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Second field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                    <br/>
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Third field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Fourth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Fifth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Sixth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Seventh field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Eighth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Nineth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Tenth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Eleventh field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Twelvth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Thirteenth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="slds-col slds-size_1-of-1">
+                        
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Fourteenth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                      </div>
+                      <br/>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                    
+                          <div class="slds-form-element ">
+                            <div class="slds-grid">
+                              <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element__label" style="text-align: left; width: 100%; margin-top: 0.25rem;">Fifteenth field</div>
+                              </div>
+                              <div class="slds-col slds-size_2-of-3">
+                                <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </div>
+                        <br/>
+                        <br/>
+                      
+                        <br/>
+                      </div>
+                </div>
+
+            </template>
+        </lightning-tab>
+
+
+
+        <lightning-tab label="Voters" onactive={handleTabChange}>
+
+            <template if:true={isTab2Active}>
+                
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">First field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Second field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Third field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Fourth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Fifth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Sixth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Seventh field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Eighth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+
+                <div class="quick-meun">
+                    <ul>
+                      
+                      <li><a href="add-new-user.html"><lightning-icon icon-name="action:add" size="xx-small" alternative-text="Add" title="Add"></lightning-icon> Add</a></li>
+                      <li><a href=""  data-toggle="modal" data-target="#modal-small"><lightning-icon icon-name="action:delete" size="xx-small" alternative-text="Delete" title="Approved"></lightning-icon>Delete</a></li>
+                      <li><a href=""><lightning-icon icon-name="utility:edit" size="xx-small" alternative-text="Eligible" title="Eligible"></lightning-icon>Eligible</a></li>
+                      <li><a href=""><lightning-icon icon-name="utility:edit" size="xx-small" alternative-text="Ineligible" title="Ineligible"></lightning-icon> Ineligible</a></li>
+                      <li><a href=""><lightning-icon icon-name="utility:download" size="xx-small" alternative-text="Import" title="Import"></lightning-icon>Import</a></li>
+                      <li><a href=""><lightning-icon icon-name="utility:upload" size="xx-small" alternative-text="Export" title="Export"></lightning-icon>Export</a></li>
+                      
+                      
+                    </ul>
+                    
+                  </div>
+
+                  Total V : 103 
+
+                  <div class="slds-card">
+                   
+                    <div class="slds-card__body">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead style="background-color:darkgreen;"> 
+                                <tr class="slds-text-title_caps" >
+                                    <th scope="col">Column 1</th>
+                                    <th scope="col">Column 2</th>
+                                    <th scope="col">Column 3</th>
+                                    <th scope="col">Column 4</th>
+                                    <th scope="col">Column 5</th>
+                                    <th scope="col">Column 6</th>
+                                    <th scope="col">Column 7</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Add your data rows here -->
+                                <tr>
+                                    <td>Data 1</td>
+                                    <td>Data 2</td>
+                                    <td>Data 3</td>
+                                    <td>Data 4</td>
+                                    <td>Data 5</td>
+                                    <td>Data 6</td>
+                                    <td>Data 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Data 11</td>
+                                    <td>Data 21</td>
+                                    <td>Data 31</td>
+                                    <td>Data 41</td>
+                                    <td>Data 51</td>
+                                    <td>Data 61</td>
+                                    <td>Data 71</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </template>
+        </lightning-tab>
+
+
+
+        <lightning-tab label="Notice and Instructions" onactive={handleTabChange}>
+            <template if:true={isTab3Active}>
+                <!-- Content for Tab 3 -->
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">First field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Second field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Third field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Fourth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Fifth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Sixth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+
+                
+                <div class="slds-box slds-size_1-of-1">
+                    <div class="slds-grid slds-wrap">
+                      <div class="slds-col slds-size_1-of-2">
+                  
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Seventh field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="First field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                      <div class="slds-col slds-size_1-of-2">
+                      
+                        <div class="slds-form-element ">
+                          <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-3">
+                              <div class="slds-form-element__label" style="text-align: right; width: 100%; margin-top: 0.25rem;">Eighth field</div>
+                            </div>
+                            <div class="slds-col slds-size_2-of-3">
+                              <lightning-input label="Second field" type="text" value="" variant="label-hidden"></lightning-input>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </div>
+                      <br/>
+                    </div>
+                </div>
+                
+                <br></br>
+                <br></br>
+                <br></br>
+
+                <div class="slds-card">
+                   
+                    <div class="slds-card__body">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead style="background-color:darkgreen;"> 
+                                <tr class="slds-text-title_caps" >
+                                    <th scope="col"  style="width: 33%;">11x17 Sample</th>
+                                    <th scope="col"  style="width: 33%;" >English <lightning-icon icon-name="doctype:pdf" size="xx-small" alternative-text="pdf" title="pdf"></lightning-icon></th>
+                                    <th scope="col"  style="width: 33%;">Spanish <lightning-icon icon-name="doctype:pdf" size="xx-small" alternative-text="pdf" title="pdf"></lightning-icon></th>
+                                    
+                                </tr>
+                            </thead>
+                          
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="slds-card__body">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead style="background-color:darkgreen;"> 
+                                <tr class="slds-text-title_caps" >
+                                    <th scope="col" style="width: 33%;">Voter Specific Bulk</th>
+                                    <th scope="col" style="width: 33%;">English <lightning-icon icon-name="doctype:pdf" size="xx-small" alternative-text="pdf" title="pdf"></lightning-icon></th>
+                                    <th scope="col" style="width: 33%;">Spanish <lightning-icon icon-name="doctype:pdf" size="xx-small" alternative-text="pdf" title="pdf"></lightning-icon></th>
+                                    
+                                </tr>
+                            </thead>
+                          
+                        </table>
+                    </div>
+                </div>
+
+                <div class="slds-card">
+                   
+                    <div class="slds-card__body">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead style="background-color:darkgreen;"> 
+                                <tr class="slds-text-title_caps" >
+                                    <th scope="col">Column 1</th>
+                                    <th scope="col">Column 2</th>
+                                    <th scope="col">Column 3</th>
+                                    <th scope="col">Column 4</th>
+                                    <th scope="col">Column 5</th>
+                                    <th scope="col">Column 6</th>
+                                    <th scope="col">Column 7</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Add your data rows here -->
+                                <tr>
+                                    <td>Data 1</td>
+                                    <td>Data 2</td>
+                                    <td>Data 3</td>
+                                    <td>Data 4</td>
+                                    <td>Data 5</td>
+                                    <td>Data 6</td>
+                                    <td>Data 7</td>
+                                </tr>
+                                <tr>
+                                    <td>Data 11</td>
+                                    <td>Data 21</td>
+                                    <td>Data 31</td>
+                                    <td>Data 41</td>
+                                    <td>Data 51</td>
+                                    <td>Data 61</td>
+                                    <td>Data 71</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+               
+
+            </template>
+        </lightning-tab>
+    </lightning-tabset>
+</template>
