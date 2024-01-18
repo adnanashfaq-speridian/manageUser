@@ -1,0 +1,119 @@
+<template>
+    <div class="container" style="height: 500px;">
+        <!-- Header Section -->
+        <header>
+            <!-- Your header content goes here -->
+            <div class="navbar-header">
+                <a class="navbar-brand px-demo-brand" href="#">Electronic Voting System</a>
+              </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content" >
+            <!-- Left Sidebar -->
+            <div class="sidebar">
+                <!-- Navigation Items with Collapse Functionality -->
+                <c-sidebar-Menu onmenuitem={updateMessage}> </c-sidebar-Menu>
+            </div>
+
+            <template lwc:if={users}> 
+            <!-- Right Main Body -->
+            <div class="right-section" style="background:#fdfdfd;">
+                <!-- Horizontal Sections -->
+                <div class="section">
+                    <!-- Navigation Items for the 1st section -->
+                    <div class="quick-meun">
+                        <ul>
+                          <li><a href="manage-users.html"><lightning-icon icon-name="action:back" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Back</a></li>
+                          <li><a href="add-new-user.html"><lightning-icon icon-name="action:new" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> New</a></li>
+                          <li><a href=""  data-toggle="modal" data-target="#modal-small"><lightning-icon icon-name="action:delete" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Disable</a></li>
+                          <li><a href=""><lightning-icon icon-name="action:refresh" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Refresh</a></li>
+                          <li><a href=""><lightning-icon icon-name="action:threedots_vertical" size="small" alternative-text="Approved" title="Approved"></lightning-icon> </a></li>
+                          
+                        </ul>
+                        
+                        
+                      </div>
+                </div>
+
+                <!-- Add more sections as needed -->
+                <div class="col-md-4 text-xs-center text-md-left text-nowrap">
+                    <h3><i class=""></i>All Users <lightning-icon icon-name="action:down" size="small" alternative-text="Approved" title="Approved"></lightning-icon> </h3>
+                  </div>
+
+                  <div>
+                    <table class="customers">
+                        <tr>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Email</th>
+                          <th>Role</th>
+                          <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>Chuck</td>
+                          <td>Gray</td>
+                          <td>c.gray@nmb.gov</td>
+                          <td>NMB Admin</td>
+                          <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>Ernst</td>
+                            <td>b.ernst@nmb.gov</td>
+                            <td>NMB Officiator</td>
+                            <td>In-Active</td>
+                        </tr>
+                        <tr>
+                            <td>Mike</td>
+                            <td>Smith</td>
+                            <td>m.smith@nmb.gov</td>
+                            <td>NMB Admin</td>
+                            <td>Locked</td>
+                        </tr>
+                        
+                        
+                      </table>
+                    
+                  </div>
+                
+
+            </div>
+
+        </template>
+
+        <template lwc:if={elections}> 
+          
+                <!-- Right Main Body -->
+                <div class="right-section" style="background:#fdfdfd;">
+                    <!-- Horizontal Sections -->
+                    <div class="section">
+                        <!-- Navigation Items for the 1st section 
+                        <div class="quick-meun">
+                            <ul>
+                              <li><a href="manage-users.html"><lightning-icon icon-name="action:back" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Back</a></li>
+                              <li><a href="add-new-user.html"><lightning-icon icon-name="action:new" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> New</a></li>
+                              <li><a href=""  data-toggle="modal" data-target="#modal-small"><lightning-icon icon-name="action:delete" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Disable</a></li>
+                              <li><a href=""><lightning-icon icon-name="action:refresh" size="xx-small" alternative-text="Approved" title="Approved"></lightning-icon> Refresh</a></li>
+                              <li><a href=""><lightning-icon icon-name="action:threedots_vertical" size="small" alternative-text="Approved" title="Approved"></lightning-icon> </a></li>
+                              
+                            </ul>
+                          </div>
+                          -->
+                          <c-t-A-Blwc></c-t-A-Blwc>
+                    </div>
+    
+                </div>
+
+                </template>
+                
+
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <!-- Your footer content goes here -->
+            <p>Copyright © Electronic Voting System. All rights reserved.</p>
+        </footer>
+    </div>
+</template>
