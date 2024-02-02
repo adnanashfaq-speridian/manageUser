@@ -1,0 +1,18 @@
+<template>
+      <lightning-card title="Parent Component">
+        <lightning-button label="Create New User" onclick={openModal}></lightning-button>
+        <!-- Modal for user creation -->
+        <template if:true={isModalOpen}>
+            <div class="modal-backdrop slds-backdrop slds-backdrop_open"></div>
+            <div class="modal-container slds-modal slds-fade-in-open">
+                <div class="slds-modal__content slds-p-around_medium">
+                   <c-new-user></c-new-user>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Close" onclick={closeModal}></lightning-button>
+                </footer>
+            </div>
+        </template>
+    </lightning-card>
+  
+</template>
