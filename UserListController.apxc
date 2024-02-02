@@ -1,0 +1,6 @@
+public with sharing class UserListController {
+    @AuraEnabled(cacheable=true)
+    public static List<User> getUsers() {
+        return [SELECT Id, FirstName, LastName, Email FROM User];
+    }
+}
