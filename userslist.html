@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="User List">
+        <template if:true={users}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th scope="col">
+                            <div class="slds-truncate" title="First Name">First Name</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Last Name">Last Name</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Email">Email</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={users} for:item="user">
+                        <tr key={user.Id}>
+                            <td data-label="First Name">
+                                <div class="slds-truncate" title={user.FirstName}>{user.FirstName}</div>
+                            </td>
+                            <td data-label="Last Name">
+                                <div class="slds-truncate" title={user.LastName}>{user.LastName}</div>
+                            </td>
+                            <td data-label="Username">
+                                <div class="slds-truncate" title={user.Username}>{user.Username}</div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+        <template if:false={users}>
+            <p>No users found.</p>
+        </template>
+    </lightning-card>
+</template>
