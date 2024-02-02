@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="New User Creation" class="user-creation-card">
+        <!-- Input fields for user details -->
+        <div class="input-fields slds-p-around_medium">
+            <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange}></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange}></lightning-input>
+            <!-- Add more input fields for other user details -->
+            <!-- Example: Email, Username, Password -->
+        </div>
+        <!-- Button to create a new user -->
+        <div class="button-container slds-p-around_medium">
+            <lightning-button label="Create User" onclick={createUser} variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
