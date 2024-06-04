@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
@@ -37,12 +36,11 @@
         <members>*</members>
         <name>Profile</name>
     </types>
-     <types>
-       <members>Child__c.Child_Record_Type</members>
-        <name>RecordType</name>
-    </types>
+
     <types>
         <members>SBQQ__RelatedContent__c</members>
+        <members>Account</members>      
+        <members>Contact</members>  
         <members>Child__c</members>        
         <name>CustomObject</name>
     </types>
